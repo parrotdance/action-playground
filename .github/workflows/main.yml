@@ -14,3 +14,10 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Deploy to server
+        run: |
+          touch id_rsa
+          echo ${{ secretEnv.SERVER_PRIVATE_KEY }} > id_rsa
+          chmod 600 id_rsa
+          scp -i id_rsa -r ./* ${{ secretEnv.SERVER_USER }}@${{ secretEnv.SERVER_IP }}:/home/ubuntu/action-playground
