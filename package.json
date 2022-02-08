@@ -1,0 +1,20 @@
+{
+  "name": "action-playground",
+  "version": "1.0.0",
+  "description": "Github action playground",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parrotdance/action-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parrotdance/action-playground/issues"
+  },
+  "homepage": "https://github.com/parrotdance/action-playground#readme"
+}
