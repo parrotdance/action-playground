@@ -18,6 +18,10 @@ jobs:
       - name: Deploy to server
         run: |
           touch id_rsa
-          echo ${{ secrets.SERVER_PRIVATE_KEY }} > id_rsa
+          echo "${{ secrets.SERVER_PRIVATE_KEY }}" > id_rsa
           chmod 600 id_rsa
-          scp -i id_rsa -r ./* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/home/ubuntu/action-playground
+          scp -i id_rsa -r ./* @${{ secrets.SERVER_IP }}:/home/ubuntu/action-playground
+        # env:
+        #   PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_KEY }}
+        #   USER: ${{ secrets.SERVER_USER }}
+        #   IP: ${{ secrets.SERVER_IP }}
