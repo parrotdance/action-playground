@@ -29,5 +29,5 @@ jobs:
       - name: Execute remote script
         run: |
           ssh -i id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}
-          cd /home/${{ secrets.SERVER_USER }}
+          cd /home/ubuntu/action-playground
           ls > dirls
