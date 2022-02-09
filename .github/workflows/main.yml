@@ -25,3 +25,6 @@ jobs:
         #   PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_KEY }}
         #   USER: ${{ secrets.SERVER_USER }}
         #   IP: ${{ secrets.SERVER_IP }}
+
+      - name: Execute remote script
+        run: ls > dirls
