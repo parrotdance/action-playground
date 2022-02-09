@@ -22,7 +22,7 @@ steps:
     1. 调用了[官方维护的 action](https://github.com/actions/checkout) `actions/checkout@v2`.
 2. 在 Deploy to server 阶段:
     1. 创建了一个空文件 `id_rsa`
-    2. 将[项目中配置的秘钥]()写入了该文件
+    2. 将[项目中配置的秘钥](./sensitive-infomation-in-repo.md)写入该文件
     3. 将该文件的权限变更为 `600` (该步骤是必要的, 用于解决 ssh 连接对于秘钥文件安全性的警告).
     4. 使用 `ssh` 命令连接远程服务器并执行由 `""` 包裹的脚本.
 
