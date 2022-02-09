@@ -7,7 +7,7 @@
 ## 相关知识
 - Github actions 基础
 - 配置敏感信息并在 action 中使用
-- ssh 连接防御机制及无口令登录方式
+- [ssh 连接防御机制及无口令登录方式](./docs/ssh-connection.md)
 
 ## 场景及解决方案
 - [传输文件到远程服务器](./docs/transfer-files.md)

@@ -30,4 +30,6 @@
 - `-r`: 递归处理所有目录及目录下的文件.
 
 ## 参考资料
-[scp 命令手册](https://man7.org/linux/man-pages/man1/scp.1.html)
+- [scp 命令手册](https://man7.org/linux/man-pages/man1/scp.1.html)
+- [ssh 连接防御机制及无口令登录方式](./ssh-connection.md)
+

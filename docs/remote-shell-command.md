@@ -31,4 +31,5 @@ steps:
 - `-o`: 临时配置 ssh 连接的选项.
 
 ## 参考资料
-[ssh 命令手册](https://man7.org/linux/man-pages/man1/ssh.1.html)
+- [ssh 命令手册](https://man7.org/linux/man-pages/man1/ssh.1.html)
+- [ssh 连接防御机制及无口令登录方式](./ssh-connection.md)
