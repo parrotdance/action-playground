@@ -27,4 +27,7 @@ jobs:
         #   IP: ${{ secrets.SERVER_IP }}
 
       - name: Execute remote script
-        run: ls > dirls
+        run: |
+          ssh -i id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}
+          cd /home/${{ secrets.SERVER_USER }}
+          ls > dirls
