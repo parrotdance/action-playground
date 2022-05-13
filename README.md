@@ -5,7 +5,7 @@
 > 没做链接或点了没有用的就是还没写.
 
 ## 相关知识
-- Github actions 基础
+- [Github actions 基础](./docs/quickstart-for-actions.md)
 - [配置敏感信息并在 action 中使用](./docs/sensitive-infomation-in-repo.md)
 - [ssh 连接防御机制及无口令登录方式](./docs/ssh-connection.md)
 
